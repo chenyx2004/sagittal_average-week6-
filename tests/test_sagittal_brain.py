@@ -1,5 +1,5 @@
 import numpy as np
-from src.sagittal_average.sagittal_brain import run_averages
+from sagittal_average.sagittal_brain import run_averages
 
 
 input = np.array([
