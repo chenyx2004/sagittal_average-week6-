@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sagittal_average"
+version = "0.1.0"
+dependencies = [
+    "numpy"
+]
+
+[project.scripts]
+sagittal-average = "sagittal_average.command:process"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sagittal_average"]
